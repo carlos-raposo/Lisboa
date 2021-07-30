@@ -1,0 +1,248 @@
+.painel {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: center;		
+		margin: 50px auto;
+		background-color:#080808;
+		 }
+
+	.inner img {width:100%; height:180px;}
+		 
+	.card {
+	  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+	  width: 300px;
+	  height:450px;
+	  margin:5px;
+	  perspective: 1500px;		 
+	}
+	.card .content {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  transform-style: preserve-3d;
+	  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+	}
+	
+	.card:hover {
+	  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+	}
+	.container {
+	  padding: 1px 12px;
+	}
+	
+	.more {
+  display: none;
+}
+.more:checked ~ .content {
+  transform: rotateY(180deg);
+}	
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front .inner, .back .inner {
+  height: 100%;
+  transform: translateZ(80px) scale(0.94);
+}
+.front {
+  background-color: white;
+}
+.front:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.front .inner { 
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+}
+.back .inner {
+ 
+}
+
+label {position: absolute;
+    right: 0px;
+    bottom: 0px;}
+
+.back .button {	
+}
+.button {  
+	text-transform: uppercase;
+	font-size: 0.95em;
+	letter-spacing: 1px;
+	font-weight: 500;
+	cursor: pointer;
+	display: block;
+	padding: 0 0.5em;
+	line-height: 2em;
+	background-color: #000;
+	border: solid 1px #f00;
+	color: #fff;
+	border-radius: 4px;
+	text-align: center; 
+	backface-visibility: hidden;
+	transition: 0.3s ease-in-out;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	}
+.button:hover {
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	text-shadow: none;
+	color: #000;
+	}
+.button.return {
+	line-height: ;
+	color: #;
+	border-color: #;
+	text-shadow: none;
+	}
+.button.return:hover {
+  background-color: #;
+  color: #;
+  box-shadow: none;
+}
+	
+	.overlay {
+	  height: 0%;
+	  width: 100%;
+	  position: fixed;
+	  z-index: 1;
+	  top: 55px;
+	  left: 0;
+	  background-color: rgb(0,0,0);
+	  background-color: rgba(0,0,0, 0.99);
+	  overflow-y: hidden;
+	  transition: 0.5s;
+	}
+	.overlay-content {
+		  position: relative;
+		  top: 4%;
+		  width: 100%;
+		  text-align: ;
+		  margin-top: 0px;  
+	}
+	.home {position: absolute; 
+		top:12px; 
+		right:90px; 
+		font-size:0px}
+	.overlay a.home{top: 4px;}	
+	.overlay a {
+	  padding: 8px;
+	  text-decoration: none;
+	  font-size: 5.9vw;
+	  color: #ffffff;
+	  text-transform: uppercase; 
+	  line-height: 1.3;
+	  transition: 0.3s;
+	}
+	.overlay a:hover, .overlay a:focus {
+	  color: #f10000;
+	}
+	.overlay .closebtn {
+	  position: absolute;
+	  top: -27px;
+	  right: 30px;
+	  font-size: 88px;
+	}
+	.openbtn {
+	  position: absolute;
+	  top: 0px;
+	  right: 45px;
+	  font-size: 40px;
+	  color: white;	 
+	}
+	.row {margin-left:4%; width:96%}
+	.column {
+	  float: left;
+	  width: 50%;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	
+	::-webkit-scrollbar {
+	width: 5px;
+	}
+	::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	}
+	::-webkit-scrollbar-thumb {
+	background: #859ddf;
+	}
+	::-webkit-scrollbar-thumb:hover {
+	background: #355cc9;
+	}
+
+	.ghost {display:none}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	  h1 {margin-top:26vw}
+	  .column {
+		width: 100%;
+	  }
+	  .overlay a {
+	  padding: 6px;
+	  text-decoration: none;
+	  color: #ffffff;
+	  text-transform: uppercase; 
+	  line-height: 1.1;
+	  display: table-caption; 
+	  }	
+	  
+	.overlay .closebtn {
+	  position: absolute;
+	  top: -25px;
+	  right: 30px;
+	  font-size: 88px;
+	}	
+	.home {position: absolute; 
+	top:14px; 
+	right:92px; 
+	font-size:0px} 
+	}  
+
+	/* Small devices (2 items) */
+	@media screen and (min-width: 620px) { 
+	.painel {width:630px;}
+	.ghost {display:none}
+	}
+	
+	/* Medium devices (3 items) */
+	@media screen and (min-width: 930px) { 
+	.painel {width:930px;}
+	.ghost {display:block; 
+	visibility:hidden}
+	}
+	
+	/* Laptops or Desktops (4 items) */
+	@media screen and (min-width: 1240px) { 
+	.painel {width:1240px;}
+	.ghost {display:none;}
+	}
+	
+	/* Large Desktops (5 items) */
+	@media screen and (min-width: 1550px) { 
+	.painel {width:1550px;}
+	.ghost {display:block; 
+	visibility:hidden;
+	width: 610px;}
+	}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="new.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a62bf9c2b5.js" crossorigin="anonymous"></script>
+<style>
+	body {
+		font-family: 'Montserrat', sans-serif;
+		background-color:black;}
+		
+
+
+.open {
+  height: 100%;
+  transition: height linear 0.5s;
+}
+
+		
+</style>
+
+
+</head>
+
+<body>
+	<div id="PrimaryNav">
+		<div>
+			<a href="index.html" class="home"><img src="home_white.svg" title="início" style="width:32px"></a>
+			<a class="toggle-menu" href="#">
+				<i></i>
+				<i></i>
+				<i></i>
+			</a>
+		</div>
+	</div>
+	<!--MENU PRINCIPAL-->
+	<div id="myNav" class="overlay">
+		
+		<div class="overlay-content row">
+			<div class="column">
+				<a class="active" href="#">Cinema</a>
+				<a href="#">Cursos</a>
+				<a href="#">Dança</a>
+				<a href="galerias.html">Galerias</a>
+				<a href="#">Comer</a>
+				<a href="jardins.html">Jardins</a>
+			</div>
+			<div class="column">
+				<a href="#">Mobilidade</a>
+				<a href="museus.html">Museus</a>
+				<a href="#">Música</a>
+				<a href="#">Natureza</a>
+				<a href="#">Política</a>
+				<a href="teatros.html">Teatros</a>
+			</div>	
+	  </div>
+	</div>
+
+	<!--PÁGINA CINEMA-->
+	<main>
+		
+		<div class="painel">			
+			<div class="card">
+				<input type="checkbox" id="card1" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/cinemas/jorge.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>São Jorge</b></h4> 
+							<p>Fundado em 1969 dando seguimento às disposições testamentárias de Calouste Sarkis Gulbenkian, industrial de origem arménia, 
+							fixado em Portugal em meados do século XX, e que ao longo da sua vida reuniu uma vasta colecção de arte. </p>
+							<label for="card1" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Com dois circuitos independentes. O primeiro é dedicado à Arte Oriental e Clássica, com peças de arte egípcia, greco-romana, 
+							arte islâmica, arte da China e arte do Japão.
+							O outro circuito é dedicado à Arte Europeia, com peças cronologicamente situadas num período que se inicia 							
+							no século XI e termina no século XX.</p> 
+							</p>
+							<label for="card1" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+
+			<div class="card">
+				<input type="checkbox" id="card2" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/cinemas/uci.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>UCI - El Corte Inglês</b></h4> 
+							<p>O mais importante museu de arte dos séculos XII a XIX em Portugal, ao acolher a mais relevante coleção pública de arte antiga do país 
+							</p>
+							<label for="card2" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<label for="card2" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card3" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/cinemas/ideal.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Ideal</b></h4> 
+							<p>Um dos mais importantes museus de Portugal, pela sua colecção singular, dedicada ao azulejo, expressão artística diferenciadora da cultura 
+							portuguesa, e pelo edifício ímpar em que se encontra instalado, o antigo Convento da Madre de Deus, fundado em 1509.</p> 
+							<label for="card3" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<label for="card3" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card4" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/cinemas/nimas.png" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Nimas</b></h4> 
+							<p>É uma instituição museológica de referência em Lisboa. Foi inaugurado em 25 de Junho de 2007 e acolhe exposições temporárias e uma coleção permanente, representativa da arte moderna e contemporânea, nacional e internacional.</p> 
+							<label for="card4" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<label for="card4" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card5" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/cinemas/city.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>City</b></h4> 
+							<p>Situado no centro histórico de Lisboa fundado em 1911.
+							A colecção de arte portuguesa, de 1850 à actualidade, constitui a mais importante colecção portuguesa de arte 
+							contemporânea, incluindo pintura, escultura, desenho, vídeo, entre outros media. </p> 
+							<label for="card5" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<label for="card5" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card6" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/cinemas/cinemateca.png" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Cinemateca</b></h4> 
+							<p>O Museu Nacional dos Coches possui a mais importante colecção, a nível mundial, de coches e carruagens reais do século XVI ao 
+							século XIX.
+							</p> 
+							<label for="card6" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<label for="card6" class="button return" aria-hidden="true">
+								virar<i class="fas fa-arrow-left"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+
+			<div class="card">
+				<input type="checkbox" id="card7" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/cinemas/noscolombo.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>NOS Colombo</b></h4> 
+							<p>O Museu de Arte, Arquitetura e Tecnologia é um museu de arte contemporânea em Lisboa, Portugal que cruza três áreas num espaço 
+							de debate, de descoberta, de pensamento crítico e de diálogo internacional.</p> 
+							<label for="card7" class="button" aria-hidden="true">
+                            virar
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<label for="card7" class="button return" aria-hidden="true">
+								virar<i class="fas fa-arrow-left"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			
+			<div class="card">
+				<input type="checkbox" id="card8" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/cinemas/city_campopequeno.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>City Campo Pequeno</b></h4> 
+							<p>A Casa Fernando Pessoa é a casa que foi habitada pelo escritor nos últimos 15 anos de vida.
+							Tem uma exposição em três pisos, sobre a vida e obra do poeta e uma biblioteca especializada em poesia mundial.
+							É um lugar de literatura que cruza memória, criação literária e leitura.
+							</p> 
+							<label for="card8" class="button" aria-hidden="true">
+                            virar
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<label for="card8" class="button return" aria-hidden="true">
+								virar<i class="fas fa-arrow-left"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+
+			<div class="card ghost">				
+			</div>
+			
+		</div>
+	</main>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script  src="script.js"></script>	
+</body>
+
+</html>

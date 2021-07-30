@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="new.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a62bf9c2b5.js" crossorigin="anonymous"></script>
+<style>
+	body {
+		font-family: 'Montserrat', sans-serif;
+		background-color:black;
+		margin:0px;}
+		
+
+
+.open {
+  height: 100%;
+  transition: height linear 0.5s;
+}
+
+.ghost {width:300px}
+
+/* Small devices (2 items) */
+	@media screen and (min-width: 620px) { 
+	.painel {width:630px;}
+	.ghost {display:none}
+	}
+	
+	/* Medium devices (3 items) */
+	@media screen and (min-width: 930px) { 
+	.painel {width:930px;}
+	.ghost {display:block; width:610px;
+	visibility:hidden}
+	}
+	
+	/* Laptops or Desktops (4 items) */
+	@media screen and (min-width: 1240px) { 
+	.painel {width:1240px;}
+	.ghost {display:block;}
+	}
+	
+	/* Large Desktops (5 items) */
+	@media screen and (min-width: 1550px) { 
+	.painel {width:1550px;}
+	.ghost {display:none; }
+	}
+		
+</style>
+
+
+</head>
+
+<body>
+	<div id="PrimaryNav">
+		<div>
+			<a href="index.html" class="home"><img src="home_white.svg" title="início" style="width:32px"></a>
+			<a class="toggle-menu" href="#">
+				<i></i>
+				<i></i>
+				<i></i>
+			</a>
+		</div>
+	</div>
+	<!--MENU PRINCIPAL-->
+	<div id="myNav" class="overlay">
+		
+		<div class="overlay-content row">
+			<div class="column">
+				<a href="cinema.html">Cinema</a>
+				<a href="#">Cursos</a>
+				<a href="#">Dança</a>
+				<a href="galerias.html">Galerias</a>
+				<a href="comer.html">Comer</a>
+				<a href="jardins.html">Jardins</a>
+			</div>
+			<div class="column">
+				<a href="#">Mobilidade</a>
+				<a href="museus.html">Museus</a>
+				<a href="#">Música</a>
+				<a href="#">Natureza</a>
+				<a href="#">Política</a>
+				<a class="active" href="#">Teatros</a>
+			</div>	
+	  </div>
+	</div>
+
+	<!--PÁGINA CINEMA-->
+	<main>
+		
+		<div class="painel">			
+			<div class="card">
+				<input type="checkbox" id="card1" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/mariaii.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Teatro Nacional D. Maria II</b></h4> 
+							<p> Abriu as suas portas a 13 de Abril de 1846, durante as comemorações do 27.º aniversário de D. Maria II (1819-1853).
+							<br>Tem capacidade para 948 pessoas sentadas e está localizado numa das praças mais importantes da cidade.</p>
+							<label for="card1" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Com dois circuitos independentes. O primeiro é dedicado à Arte Oriental e Clássica, com peças de arte egípcia, greco-romana, 
+							arte islâmica, arte da China e arte do Japão.
+							O outro circuito é dedicado à Arte Europeia, com peças cronologicamente situadas num período que se inicia 							
+							no século XI e termina no século XX.</p> 
+							</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3113.139054336939!2d-9.141675775392786!3d38.714616329473806!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf4376138a1d71cf4!2sTeatro%20Nacional%20D.%20Maria%20II!5e0!3m2!1spt-PT!2spt!4v1612410785873!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>							
+							<label for="card1" class="button return" aria-hidden="true">	
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+
+			<div class="card">
+				<input type="checkbox" id="card2" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/saoluis.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Teatro São Luiz</b></h4> 
+							<p>Inaugurado em 22 de Maio de 1894 com o nome de Teatro Dona Amélia, à época rainha de Portugal.
+							Em 1928 o teatro foi adaptado a cinema, tendo estreado com o filme <i>Metropolis</i> de Fritz Lang.
+							Em 1971 a sala foi comprada pela Câmara Municipal, passando a ter o nome Teatro Municipal de São Luis. 
+							</p>
+							<label for="card2" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3113.3837605986923!2d-9.143907323802818!3d38.708997390546536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x82e338ce96f80b0c!2sTeatro%20S%C3%A3o%20Luiz!5e0!3m2!1spt-PT!2spt!4v1612412294985!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>							
+							<label for="card2" class="button return" aria-hidden="true">
+							virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card3" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/trindade.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Teatro da Trindade</b></h4> 
+							<p>O Jardim Botânico de Lisboa pertence ao Museu Nacional de História Natural 
+							e da Ciência (MUHNAC). Junta uma enorme diversidade de espécies (entre 1.300 e 1.500) com a beleza e fascínio dos seus recantos e declives que convidam à sua descoberta demorada.</p> 
+							<label for="card3" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Rua da Escola Politécnica 54
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.2645030432827!2d-9.144570948932937!3d38.71173586537114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19347f75a1d8bd%3A0xc53f917cc09c7b37!2sTeatro%20da%20Trindade%20%2F%20Inatel!5e0!3m2!1spt-PT!2spt!4v1612412564065!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>							
+							<label for="card3" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card4" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/saocarlos.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>São Carlos</b></h4> 
+							<p>É a principal casa de ópera de Lisboa, em Portugal. Foi inaugurado em 30 de junho de 1793 pelo Príncipe Regente D. João para substituir o Teatro Ópera do Tejo, que foi destruído no Terramoto de 1755.</p> 
+							<label for="card4" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6226.810291776777!2d-9.145556008130956!3d38.70850630940095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd6a67d973b003ad0!2sTeatro%20Nacional%20de%20S%C3%A3o%20Carlos!5e0!3m2!1spt-PT!2spt!4v1612439591964!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>				
+							<label for="card4" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card5" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/tivoli.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Teatro Tivoli BBVA</b></h4> 
+							<p> Fundado em 1924, o Tivoli situa-se na Avenida da Liberdade de Lisboa, possui 1149 lugares. O espaço projetado pelo arquiteto Raul Lino foi concebido como cinema que pudesse apresentar outro tipo de espetáculos. </p> 
+							<label for="card5" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6225.797187290521!2d-9.14854535468858!3d38.720137112141515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x73d5f54323313dda!2sTeatro%20Tivoli%20BBVA!5e0!3m2!1spt-PT!2spt!4v1612440178943!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>											
+							<label for="card5" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card6" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/politeama.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Teatro Politeama</b></h4> 
+							<p>Inaugurado em 1913 é um dos teatros com mais público em Lisboa. Dirigido por Filipe La Féria tem promovido em especial os Musicais e a Revista à Portuguesa. 
+							</p> 
+							<label for="card6" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3113.0619571064776!2d-9.142977936772255!3d38.71638649169744!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b7d4bbd5457993b!2sTeatro%20Politeama!5e0!3m2!1spt-PT!2spt!4v1612441671614!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>								
+							<label for="card6" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+
+			<div class="card">
+				<input type="checkbox" id="card7" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/mariamatos.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Maria Matos</b></h4> 
+							<p>Fundado em 1969. Tem uma programação diversificada de modo a tornar-se um espaço de experimentação de novas linguagens artísticas, impondo-se como um espaço alternativo entre os vários públicos.</p> 
+							<label for="card7" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malemes ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.795980282396!2d-9.14050453088606!3d38.74544373029322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933af14da2c3b%3A0x688cf8b6ba081d92!2sTeatro%20Maria%20Matos!5e0!3m2!1spt-PT!2spt!4v1612550054467!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>							
+							<label for="card7" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			
+			<div class="card">
+				<input type="checkbox" id="card8" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/aberto.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Teatro Aberto</b></h4> 
+							<p>Inaugurado em 1974. Do seu repertório constam grandes clássicos do teatro universal mas sobretudo peças de teatro contemporâneo: de novos autores da dramaturgia internacional e também de língua portuguesa, além de óperas e concertos.
+							</p> 
+							<label for="card8" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.241686735215!2d-9.160751936443544!3d38.735215781588735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19330dff863241%3A0x14ba62cf46acc2f3!2sTeatro%20Aberto!5e0!3m2!1spt-PT!2spt!4v1612550162881!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>							
+							<label for="card8" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card9" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/comuna.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>A Comuna: Teatro de Pesquisa</b></h4> 
+							<p>Fundado em 1972 foi a primeira companhia portuguesa de teatro experimental. 
+							O espaço, conhecido como "Casarão Cor-de-Rosa" foi ocupado em 1975. 
+							</p> 
+							<label for="card9" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.189403095158!2d-9.162197627507156!3d38.73641568996524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193313c0d476dd%3A0xd5cabd255fcd7a35!2sTeatro%20da%20Comuna!5e0!3m2!1spt-PT!2spt!4v1612549791603!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<label for="card9" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card10" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/teatros/barraca.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>A Barraca</b></h4> 
+							<p>Fundada em 1975 inscrevendo-se num movimento emergente de companhias de teatro experimental e independente.
+							A produção teatral do grupo faz-se sobretudo numa adaptação eficaz de temas históricos e políticos ao formato popular, tradicional e moderno do teatro narrativo.
+							</p> 
+							<label for="card10" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.5243215572204!2d-9.157658330361908!3d38.70576952247875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19348360ddf579%3A0x19f64981f5819c95!2sTeatro%20A%20Barraca!5e0!3m2!1spt-PT!2spt!4v1612550396902!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>							
+							<label for="card10" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+
+			<div class="card ghost">				
+			</div>
+			
+		</div>
+	</main>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script  src="script.js"></script>	
+</body>
+
+</html>

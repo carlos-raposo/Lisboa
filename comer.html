@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="new.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a62bf9c2b5.js" crossorigin="anonymous"></script>
+<style>
+	body {
+		font-family: 'Montserrat', sans-serif;
+		background-color:black;
+		margin:0px;}		
+
+	.open {
+	  height: 100%;
+	  transition: height linear 0.5s;}
+		
+	.ghost {width:300px}
+
+		
+</style>
+
+
+</head>
+
+<body>
+	<div id="PrimaryNav">
+		<div>
+			<a href="index.html" class="home"><img src="home_white.svg" title="início" style="width:32px"></a>
+			<a class="toggle-menu" href="#">
+				<i></i>
+				<i></i>
+				<i></i>
+			</a>
+		</div>
+	</div>
+	<!--MENU PRINCIPAL-->
+	<div id="myNav" class="overlay">
+		
+		<div class="overlay-content row">
+			<div class="column">
+				<a href="cinema.html">Cinema</a>
+				<a href="#">Cursos</a>
+				<a href="#">Dança</a>
+				<a href="galerias.html">Galerias</a>
+				<a class="active" href="#">Comer</a>
+				<a href="jardins.html">Jardins</a>
+			</div>
+			<div class="column">
+				<a href="#">Mobilidade</a>
+				<a href="museus.html">Museus</a>
+				<a href="#">Música</a>
+				<a href="#">Natureza</a>
+				<a href="#">Política</a>
+				<a href="teatros.html">Teatros</a>
+			</div>	
+	  </div>
+	</div>
+
+	<!--PÁGINA COMER-->
+	<main>
+		
+		<div class="painel">
+
+			<div class="card">
+				<input type="checkbox" id="card" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <div style="width:300px; height:180px; font-size: 50px; background-color:yellow; display: flex;
+								justify-content: center;
+								flex-flow: column wrap;
+								text-align: center;">
+							<h2> INTRO </h2>
+						  </div>
+						  <div class="container">
+							<p>Quem vem a Lisboa pode apreciar uma gastronomia muito variada
+							pois sendo a capital, junta gente de todas as regiões do país- para além da cozinha internacional.
+							Propriamente de Lisboa não existe uma gastronomia própria, ou, se existe, ela perde-se na imensidão
+							de escolhas de outras regiões. Ah! O Pastel de Nata! Esse sim nasceu em Lisboa e poderá degustá-lo 
+							no seu local de origem.
+							
+							</p> 
+							<label for="card" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	À volta de Lisboa poderá encontrar especialidades regionais. Sintra, Santarém, Setúbal ou Mafra são apenas alguns exemplos.
+							À parte, toda a localidade junto à costa é lugar de bom peixe.</p>
+							<p>Para acompanhar existem excelentes vinhos, brancos ou tintos, denominados <strong>Vinhos de Lisboa e Vale do Tejo</strong>.</p>
+							<label for="card" class="button return" aria-hidden="true">
+								virar<i class="fas fa-arrow-left"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card1" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/comer/nata.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Pastel de Nata</b></h4> 
+							<p>Os pastéis de nata ou pastéis de Belém são uma das mais populares especialidades da 
+							doçaria portuguesa. Embora se possam saborear pastéis de nata em muitos cafés e pastelarias, 
+							a receita original é um segredo exclusivo da Fábrica dos Pastéis de Belém, em Lisboa 
+							(único local</p>
+							<label for="card1" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	cujos doces devem receber a nomenclatura "Pastéis de Belém"). Aí, tradicionalmente, 
+							os pastéis comem-se ainda quentes, polvilhados de canela e de açúcar.</p>
+ 							<p>Se puder prove a receita original na Casa dos Pasteis de Belém mas não deixe de experimentar
+							os pastéis da Manteigaria.</p>
+							<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1psl0s9yNjhzmOJei33kqsVVL0Bfffl7v" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<label for="card1" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+
+			<div class="card">
+				<input type="checkbox" id="card2" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/comer/sardinhas.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Sardinha Assada</b></h4> 
+							<p>A sardinha na grelha é um prato tradicional da cozinha portuguesa e é uma das 7 Maravilhas da Gastronomia de Portugal.
+							Uma refeição de sardinhas assadas na brasa costuma designar-se por "sardinhada".
+							Apesar do hábito de se chamar "assada", a sardinha é de facto grelhada na respectiva
+							</p>
+							<label for="card2" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	grelha, sendo o nome correto "sardinha na grelha"</p>
+							<p>A melhor época para comer sardinha é de Junho a Outubro. Se for Junho há sardinha na grelha em todos os bairros populares. Aventure-se e experimente aqui e ali.  </p>
+							<label for="card2" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card3" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/comer/marisco.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Marisco</b></h4> 
+							<p>A água gelada da extremidade do continente presenteou o país com uma variedade rara e deliciosa destes bichinhos do mar.<br>
+							Para apreciá-los, vá a uma boa cervejaria ou marisqueira.</p> 
+							<label for="card3" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.0475815791265!2d-9.154691186706359!3d38.71671654808858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19337bee1fe955%3A0xd16fe343617a048!2sGaleria%20S%C3%A3o%20Mamede!5e0!3m2!1spt-PT!2spt!4v1612627873362!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<label for="card3" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card4" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/comer/frango.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Frango Assado</b></h4> 
+							<p>O Frango assado ou frango de churrasco é um prato muito apreciado pelos portugueses. O frango é grelhado na grelha a carvão
+							ou elétrico e pode ser acompanhado com um molho feito de azeite, temperos e pimentões piri-piri esmagados.</p> 
+							<label for="card4" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Ir buscar um frango assado a uma churrascaria take-way aos fins-de-semana é um hábito em muitas casas. Normalmente
+							acompanha com batatas fritas e uma boa salada de alface e tomate. </p>					
+							<iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d24903.665083070526!2d-9.152051359750974!3d38.718770143874!3m2!1i1024!2i768!4f13.1!2m1!1sfrango%20assado!5e0!3m2!1sen!2spt!4v1621890013038!5m2!1sen!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<label for="card4" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card5" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/comer/cozido.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Cozido à Portuguesa</b></h4> 
+							<p>R. Fernando Palha 56, 1950-132 Lisboa<br>
+							HORÁRIO: seg a sex 14-19 <br>
+							<a href="http://www.under-dogs.net/">under-dogs.net</a>
+							<br>+351218680462
+							<label for="card5" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>Underdogs é uma plataforma cultural sediada em Lisboa, Portugal, que visa criar espaço no cenário da arte contemporânea para artistas ligados às novas linguagens da cultura gráfica e visual de inspiração urbana </p> 
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.832778693675!2d-9.10190531554181!3d38.74459937668126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19316295f7478f%3A0xf4c70874e8743ce1!2sGaleria%20Underdogs!5e0!3m2!1spt-PT!2spt!4v1612816302021!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<label for="card5" class="button return" aria-hidden="true">
+								virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card6" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/comer/caracois.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Caracóis</b></h4> 
+							<p>Rua da Alegria 34, 1250-007 Lisboa
+							<a href="http://www.focolisboa.com/">focolisboa.com</a>
+							<br>+351910867976
+							<br>HORÁRIO: ter a sex das 14 às 19; sáb 11 às 13
+							</p> 
+							<label for="card6" class="button" aria-hidden="true">
+                            virar <i class="fas fa-chevron-right"></i>
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dosectetur adipiscing elit. Praesent ut augue orci. Pellentesque habitant morbi tristique senectus et 
+							netus et murpis egestas.</p>
+							<p>Nam vulputate . Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.075919154691!2d-9.148445963507069!3d38.71606592635255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8818bdd831dc649!2sGaleria%20Foco!5e0!3m2!1spt-PT!2spt!4v1612817464606!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<label for="card6" class="button return" aria-hidden="true">
+								virar<i class="fas fa-arrow-left"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+
+			<div class="card">
+				<input type="checkbox" id="card7" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/comer/caldeirada.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Caldeirada</b></h4> 
+							<p>R. Santo António à Estrela 33, 1350-291 Lisboa</p> 
+							<br><a href="http://www.cristinaguerra.com/">cristinaguerra.com</a>
+							<br>+351213959559
+							<br>HORÁRIO: ter a sex das 12 às 19; sáb 15 às 19
+							<label for="card7" class="button" aria-hidden="true">
+                            virar
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit.ristique senectus et 
+							netus et malesuada fames ac turpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.2821204078514!2d-9.165792579376221!3d38.71133133348938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193361b7432b89%3A0x5a30fe7d23196723!2sCristina%20Guerra%20Contemporary%20Art!5e0!3m2!1spt-PT!2spt!4v1612913925879!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin: auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<label for="card7" class="button return" aria-hidden="true">
+								virar<i class="fas fa-arrow-left"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			
+			<div class="card">
+				<input type="checkbox" id="card8" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/comer/bifana.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Bifanas</b></h4> 
+							<p>Lt r/c, R. Joly Braga Santos F, 1600-123 Lisboa
+							<br><a href="http://www.carloscarvalho-ac.com/">carloscarvalho-ac.com</a>
+							<br>+351217261831
+							<br>HORÁRIO: de seg a sex 10 às 19.30; sáb 12 às 19.30
+							</p> 
+							<label for="card8" class="button" aria-hidden="true">
+                            virar
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsumpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d99633.33896786293!2d-9.15831706954133!3d38.70536714673106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbifanas!5e0!3m2!1sen!2spt!4v1621890220251!5m2!1sen!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<label for="card8" class="button return" aria-hidden="true">
+								virar<i class="fas fa-arrow-left"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>
+			
+			<div class="card">
+				<input type="checkbox" id="card8" class="more" aria-hidden="true">
+				<div class="content">
+					<div class="front">
+						<div class="inner"> 
+						  <img src="images/comer/bacalhau.jpg" alt="Avatar" style="width:100%;">
+						  <div class="container">
+							<h4><b>Bacalhau</b></h4> 
+							<p>Lt r/c, R. Joly Braga Santos F, 1600-123 Lisboa
+							<br><a href="http://www.carloscarvalho-ac.com/">carloscarvalho-ac.com</a>
+							<br>+351217261831
+							<br>HORÁRIO: de seg a sex 10 às 19.30; sáb 12 às 19.30
+							</p> 
+							<label for="card8" class="button" aria-hidden="true">
+                            virar
+							</label>
+						  </div>
+						</div>  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<div class="container">
+							<p>	Lorem ipsumpis egestas.</p>
+							<p>Nam vulputate malesuada iaculis. Suspendisse vitae pulvinar mi, ut convallis nunc. Aliquam sed quam eget arcu tincidunt placerat.</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12448.41425590594!2d-9.177199000061032!3d38.73838562789964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193321ecc41675%3A0xd68f5b10c168f59!2sCarlos%20Carvalho%20Arte%20Contempor%C3%A2nea!5e0!3m2!1spt-PT!2spt!4v1612914514640!5m2!1spt-PT!2spt" width="300" height="auto" frameborder="0" style="border:0; margin:auto -12px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							<label for="card8" class="button return" aria-hidden="true">
+								virar<i class="fas fa-arrow-left"></i>
+							</label>
+						  </div>							
+						</div>
+					</div>
+				</div>  
+			</div>				
+			
+		</div>
+	</main>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script  src="script.js"></script>	
+</body>
+
+</html>

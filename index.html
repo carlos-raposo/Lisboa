@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+	margin:0px;
+	font-family: 'Montserrat', sans-serif;
+	background-color:black;}
+main { 
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;}	
+main div {width: 100%;
+	height: auto;
+	text-align: center;}	
+h1 {font-size: 20vw; 
+	color:white; 
+	text-align:center; 
+	align-self: center;
+	border-top:4vw solid MediumSeaGreen;
+	border-bottom:4vw solid MediumSeaGreen;}	
+
+.open {
+  height: 100%;
+  transition: height linear 0.5s;
+}	
+	
+.painel {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top:50px;
+	 }	
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  height:450px;
+  float:left;
+  margin:20px;
+  background-color:white;
+ 
+}
+
+.card:hover {
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+.home {position: absolute; 
+	top:12px; 
+	right:90px; 
+	font-size:0px}
+
+
+.openbtn {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  font-size: 40px;
+  color: white;
+ 
+}
+.row {margin-left:4%; width:96%}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	  
+	  .column {
+		width: 100%;
+	  }
+	  .overlay a {
+	  padding: 6px;
+	  text-decoration: none;
+	  color: #ffffff;
+	  text-transform: uppercase; 
+	  line-height: 1.1;
+	  display: table-caption; 
+	  }
+	  
+	  .overlay .closebtn {
+	  position: absolute;
+	  top: -15px;
+	  right: 30px;
+	  font-size: 88px;
+	}
+	
+	
+
+</style>
+
+</head>
+
+<body>
+
+	<!--MENU PRIMÁRIO-->
+		<div id="PrimaryNav">
+			<div>
+				<a class="toggle-menu" href="#">
+					<i></i>
+					<i></i>
+					<i></i>
+				</a>
+			</div>
+		</div>
+
+	<!--MENU PRINCIPAL-->
+	<div id="myNav" class="overlay">
+		<div class="overlay-content row">
+			<div class="column">
+				<a href="cinema.html">Cinema</a>
+				<a href="#">Cursos</a>
+				<a href="#">Dança</a>
+				<a href="galerias.html">Galerias</a>
+				<a href="comer.html">Comer</a>
+				<a href="jardins.html">Jardins</a>
+			</div>
+			<div class="column">
+				<a href="#">Mobilidade</a>
+				<a href="museus.html">Museus</a>
+				<a href="#">Música</a>
+				<a href="#">Natureza</a>
+				<a href="#">Política</a>
+				<a href="teatros.html">Teatros</a>
+			</div>	
+	  </div>
+	</div>
+
+	<main>
+		<div>
+			<h1>LISBOA</h1>
+		</div>	
+	</main>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script  src="script.js"></script>	
+
+</body>
+
+</html>
